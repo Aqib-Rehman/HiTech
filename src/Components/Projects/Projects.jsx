@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 const data = [
   {
     id: 1,
-    location: "CKMC Kharia Cantt",
+    location: "CKMC Kharia Cant",
     count: "100KW",
     backgroundImage: "/image4.png",
     ml: "2.6rem",
