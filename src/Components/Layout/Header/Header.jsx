@@ -23,10 +23,10 @@ const pages = [
     name: "Home",
     path: "/",
   },
-  // {
-  //   name: "About",
-  //   path: "/about",
-  // },
+  {
+    name: "HITECH Group of Comapnies",
+    path: "/group-of-companies",
+  },
   {
     name: "Services",
     path: "/services",
@@ -35,12 +35,15 @@ const pages = [
     name: "Project",
     path: "/project",
   },
-  // {
+  //  {
   //   name: "Blog",
   //   path: "/blog",
   // },
 ]
 const phoneNumber = "0303-7584921"
+
+
+
 export const Header = () => {
   const navigate = useNavigate()
   const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -73,13 +76,15 @@ export const Header = () => {
     "Dashboard",
     // Cookies.get("access_token") ? "Logout" : "Login",
   ]
+
+
   return (
     <AppBar
       position='static'
       sx={{
         // bgcolor: "transparent",
         boxShadow: "none",
-        height: { md: " 6.25rem" },
+        height: { md: " 10.25rem" },
         py: "0.8rem",
 
         display: "flex",
@@ -99,17 +104,135 @@ export const Header = () => {
         <Toolbar
           disableGutters
           sx={{
-            px: { xs: "1rem", md: "2rem", lg: "6.5rem" },
+            pl: { xs: "1rem", md: "2rem", lg: "0.8rem" },
+            pr: { xs: "1rem", md: "2rem", lg: "2rem" },
             justifyContent: "space-between",
             // alignItems: "center",
           }}
         >
-          <Box
-            onClick={() => navigate("/")}
-            component='img'
-            src='/logo.png'
-            sx={{ display: { xs: "none", md: "flex" } }}
-          />
+          
+
+
+
+
+{/* ====== LOGO SECTION START ====== */}
+<Box
+  sx={{
+    display: "flex",
+    alignItems: "center",
+    gap: "2rem",
+    cursor: "pointer",
+  }}
+  onClick={() => navigate("/")}
+>
+  
+   {/* <Box // ==== Left Logos + Tagline ==== }
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center", // ✅ Center logos and tagline
+      justifyContent: "center",
+      // gap: "0.5rem",
+      textAlign: "center", // ✅ Centers text nicely
+    }}
+  >
+
+    <Typography
+      variant="h3"
+      sx={{
+        fontSize: "0.9rem",
+        color: "#4A4A4A",
+        fontWeight: "bold",
+        mt: "1.8rem",
+        textAlign: "center", // optional — centers text if needed
+        letterSpacing: "0.05rem", // adds a subtle professional spacing
+      }}
+    >
+     HITECH GROUP OF COMAPNIES
+    </Typography>
+
+
+    
+    <Box // Two Logos in a Row }
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center", // ✅ Center both logos
+        alignItems: "center",
+        gap: "1rem",
+      }}
+    >
+      <Box
+        component="img"
+        src="/left-logo1.jpeg"
+        alt="Left Logo 1"
+        sx={{
+          width: "80px",
+          height: "80px",
+          objectFit: "contain",
+          display: { xs: "none", md: "flex" },
+        }}
+      />
+
+      <Box
+        component="img"
+        src="/left-logo2.jpeg"
+        alt="Left Logo 2"
+        sx={{
+          width: "80px",
+          height: "80px",
+          objectFit: "contain",
+          display: { xs: "none", md: "flex" },
+        }}
+      />
+    </Box>
+
+    
+    <Typography // Tagline Below Both Logos }
+      variant="subtitle2"
+      sx={{
+        fontSize: "0.9rem",
+        color: "#4A4A4A",
+        fontStyle: "italic",
+        fontWeight: 500,
+        mt: "0.25rem",
+      }}
+    >
+      Under the Umbrella of Hitech secondary solutions Pvt. Ltd.
+    </Typography>
+  </Box>  */}
+
+
+
+  {/* ==== Main Center Logo ==== */}
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <Box
+      component="img"
+      src="/logo.png"
+      alt="Main Logo"
+      sx={{
+        width: "150px",
+        height: "auto",
+        display: { xs: "none", md: "flex" },
+      }}
+    />
+   
+  </Box>
+</Box>
+{/* ====== LOGO SECTION END ====== */}
+
+
+          
+
+
+
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size='large'

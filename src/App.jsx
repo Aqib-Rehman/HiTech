@@ -6,6 +6,7 @@ import { Projects } from "./Components/Projects/Projects"
 import { Contact } from "./Components/Contact/Contact"
 import { ProjectDetails } from "./Components/Projects/ProjectDetails/ProjectDetails"
 import { ServicesDetail } from "./Components/Services/ServicesDetail/ServicesDetail"
+import { GroupsOfCompanies } from "./Components/GroupsOfCompanies/GroupsOfCompanies"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Route path='/services-detail/:id' element={<ServicesDetail />} />
       <Route path='/project' element={<Projects />} />
       <Route path='/project-detail/:id' element={<ProjectDetails />} />
+       <Route path='/group-of-companies' element={<GroupsOfCompanies />} />
     </Routes>
   )
 }

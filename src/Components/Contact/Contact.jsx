@@ -15,7 +15,7 @@ const contact = [
     icon: "/contact.png",
     title: "Contact Info",
     des: "info@hitechskyenergy.com ",
-    con: "+92 312 3810022",
+    con: "+92 312 3810022 \nLandline Number: 5400045\nFax: 5400043\n Imtiaz Ext: 102\nHassan Ext: 103\nAccounts Department Ext: 104\nSales Department Ext: 105\nTechnical Department Ext: 106\nDesign Department Ext: 107\nKitchen Ext: 108",
   },
 ]
 export const Contact = () => {
@@ -105,7 +105,8 @@ export const Contact = () => {
                     // height: " 19.4375rem",
                     m: "auto",
 
-                    height: "23rem",
+                    minHeight: "23rem",
+                    height: "100%",
                     // maxHeight: "25rem",
                     width: "100%",
                   }}
@@ -148,9 +149,13 @@ export const Contact = () => {
                       mx: "1.3rem",
                       // mb: "1.75rem",
                       fontSize: { xs: "0.9rem", md: "1rem" },
+                      whiteSpace: "pre-line",
                     }}
                   >
-                    {itm.con}
+                    
+  {itm.con }
+
+                  
                   </Typography>
                 </Box>
               </Grid>
