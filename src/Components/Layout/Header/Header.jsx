@@ -23,10 +23,10 @@ const pages = [
     name: "Home",
     path: "/",
   },
-  {
-    name: "HITECH Group of Comapnies",
-    path: "/group-of-companies",
-  },
+//  {
+//    name: "HITECH Group of Comapnies",
+//    path: "/group-of-companies",
+//  },
   {
     name: "Services",
     path: "/services",
